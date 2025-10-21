@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/MokeyDokey/Documents/Projects/ParticleStuff/build/cmake_install.cmake",
+		"/home/MokeyDokey/Documents/Projects/ParticleStuff/build/_deps/glm-build/cmake_install.cmake",
+		"/home/MokeyDokey/Documents/Projects/ParticleStuff/build/_deps/glm-build/glm/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

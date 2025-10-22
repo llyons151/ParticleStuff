@@ -2,12 +2,9 @@
 ### Real-Time Particle Playground (OpenGL)
 
 A fast, tweakable particle sandbox written in **C++17 + OpenGL**.  
-It renders large particle counts and lets you experiment with procedural “wave” fields and gravity-style motion.
+It renders large particle counts and lets you experiment with procedural “wave” fields and gravity-style motion
 
-
-![Untitled design(1)](https://github.com/user-attachments/assets/3436b520-b868-4c3f-83ee-27df2cc5a22d)
-
----
+![Untitled design(4)(1)](https://github.com/user-attachments/assets/af023e1e-8aa3-49f7-ba2a-7f5f5c22efff)
 
 ## 🧱 Project Layout
 ```bash

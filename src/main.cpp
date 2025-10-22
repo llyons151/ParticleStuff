@@ -7,6 +7,7 @@
 #include "core/shader.hpp"
 #include "graphics/particle.hpp"
 #include "graphics/particleRenderer.hpp"
+#include "graphics/particleManager.hpp"
 #include <iostream>
 #include <string>
 #include <vector>
@@ -29,6 +30,9 @@ int main(int argc, char* argv[]){
     // Create the particles
     int numParticles = 100000;
 
+    // Create particle manager
+    ParticleManager particleManager;
+
     // Check for arguments
     if(argc > 1){
         std::cout << "Making " << argv[1] << " Particles" << std::endl;
@@ -43,11 +47,7 @@ int main(int argc, char* argv[]){
     while(!window.shouldClose()){
         window.setBackgroundColor();
 
-        for (auto& p : particles) {
-            p.m_x += sin(p.m_y * 2.0f + glfwGetTime()) * 0.02f;
-            p.m_y += cos(p.m_x * 2.0f - glfwGetTime()) * 0.02f;
-            p.m_z += cos(p.m_z * 2.0f - glfwGetTime()) * 0.02f;
-        }
+        particleManager.wave4(particles);
 
         particleRenderer.updateBuffers(particles);
         particleRenderer.drawParticles();
@@ -59,7 +59,7 @@ int main(int argc, char* argv[]){
                               camera.proj,  camera.eye);
 
         // Camera movement
-        camera.zoomOut();
+        camera.stationary();
 
         window.swapBuffers();
         window.pollEvents();

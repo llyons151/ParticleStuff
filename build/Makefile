@@ -262,6 +262,30 @@ src/graphics/particle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Particles.dir/build.make CMakeFiles/Particles.dir/src/graphics/particle.cpp.s
 .PHONY : src/graphics/particle.cpp.s
 
+src/graphics/particleManager.o: src/graphics/particleManager.cpp.o
+.PHONY : src/graphics/particleManager.o
+
+# target to build an object file
+src/graphics/particleManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Particles.dir/build.make CMakeFiles/Particles.dir/src/graphics/particleManager.cpp.o
+.PHONY : src/graphics/particleManager.cpp.o
+
+src/graphics/particleManager.i: src/graphics/particleManager.cpp.i
+.PHONY : src/graphics/particleManager.i
+
+# target to preprocess a source file
+src/graphics/particleManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Particles.dir/build.make CMakeFiles/Particles.dir/src/graphics/particleManager.cpp.i
+.PHONY : src/graphics/particleManager.cpp.i
+
+src/graphics/particleManager.s: src/graphics/particleManager.cpp.s
+.PHONY : src/graphics/particleManager.s
+
+# target to generate assembly for a file
+src/graphics/particleManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Particles.dir/build.make CMakeFiles/Particles.dir/src/graphics/particleManager.cpp.s
+.PHONY : src/graphics/particleManager.cpp.s
+
 src/graphics/particleRenderer.o: src/graphics/particleRenderer.cpp.o
 .PHONY : src/graphics/particleRenderer.o
 
@@ -335,6 +359,9 @@ help:
 	@echo "... src/graphics/particle.o"
 	@echo "... src/graphics/particle.i"
 	@echo "... src/graphics/particle.s"
+	@echo "... src/graphics/particleManager.o"
+	@echo "... src/graphics/particleManager.i"
+	@echo "... src/graphics/particleManager.s"
 	@echo "... src/graphics/particleRenderer.o"
 	@echo "... src/graphics/particleRenderer.i"
 	@echo "... src/graphics/particleRenderer.s"

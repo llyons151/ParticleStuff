@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/MokeyDokey/Documents/Projects/ParticleStuff/src/core/shader.cpp" "CMakeFiles/Particles.dir/src/core/shader.cpp.o" "gcc" "CMakeFiles/Particles.dir/src/core/shader.cpp.o.d"
   "/home/MokeyDokey/Documents/Projects/ParticleStuff/src/core/window.cpp" "CMakeFiles/Particles.dir/src/core/window.cpp.o" "gcc" "CMakeFiles/Particles.dir/src/core/window.cpp.o.d"
   "/home/MokeyDokey/Documents/Projects/ParticleStuff/src/graphics/particle.cpp" "CMakeFiles/Particles.dir/src/graphics/particle.cpp.o" "gcc" "CMakeFiles/Particles.dir/src/graphics/particle.cpp.o.d"
+  "/home/MokeyDokey/Documents/Projects/ParticleStuff/src/graphics/particleManager.cpp" "CMakeFiles/Particles.dir/src/graphics/particleManager.cpp.o" "gcc" "CMakeFiles/Particles.dir/src/graphics/particleManager.cpp.o.d"
   "/home/MokeyDokey/Documents/Projects/ParticleStuff/src/graphics/particleRenderer.cpp" "CMakeFiles/Particles.dir/src/graphics/particleRenderer.cpp.o" "gcc" "CMakeFiles/Particles.dir/src/graphics/particleRenderer.cpp.o.d"
   "/home/MokeyDokey/Documents/Projects/ParticleStuff/src/main.cpp" "CMakeFiles/Particles.dir/src/main.cpp.o" "gcc" "CMakeFiles/Particles.dir/src/main.cpp.o.d"
   "" "Particles" "gcc" "CMakeFiles/Particles.dir/link.d"

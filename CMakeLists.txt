@@ -25,6 +25,7 @@ set(SOURCES
     src/core/shader.cpp
     src/graphics/particle.cpp
     src/graphics/particleRenderer.cpp
+    src/graphics/particleManager.cpp
 )
 
 # Add executable with sources variable

@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Particles.dir/src/glad.c.o.d"
   "CMakeFiles/Particles.dir/src/graphics/particle.cpp.o"
   "CMakeFiles/Particles.dir/src/graphics/particle.cpp.o.d"
+  "CMakeFiles/Particles.dir/src/graphics/particleManager.cpp.o"
+  "CMakeFiles/Particles.dir/src/graphics/particleManager.cpp.o.d"
   "CMakeFiles/Particles.dir/src/graphics/particleRenderer.cpp.o"
   "CMakeFiles/Particles.dir/src/graphics/particleRenderer.cpp.o.d"
   "CMakeFiles/Particles.dir/src/main.cpp.o"

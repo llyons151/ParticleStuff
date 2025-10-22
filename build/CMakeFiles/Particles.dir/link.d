@@ -9,6 +9,7 @@ Particles: \
   CMakeFiles/Particles.dir/src/core/shader.cpp.o \
   CMakeFiles/Particles.dir/src/graphics/particle.cpp.o \
   CMakeFiles/Particles.dir/src/graphics/particleRenderer.cpp.o \
+  CMakeFiles/Particles.dir/src/graphics/particleManager.cpp.o \
   /usr/lib/libglfw.so.3.4 \
   _deps/glm-build/glm/libglm.a \
   /usr/lib/libGLX.so \
@@ -70,6 +71,8 @@ CMakeFiles/Particles.dir/src/core/shader.cpp.o:
 CMakeFiles/Particles.dir/src/graphics/particle.cpp.o:
 
 CMakeFiles/Particles.dir/src/graphics/particleRenderer.cpp.o:
+
+CMakeFiles/Particles.dir/src/graphics/particleManager.cpp.o:
 
 /usr/lib/libglfw.so.3.4:
 

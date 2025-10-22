@@ -16,7 +16,7 @@ class Camera{
         float m_radius;
         int m_height;
         int m_width;
-        const float m_FOV = 50.0f;
+        const float m_FOV = 20.0f;
 
     public:
         glm::mat4 model;
@@ -30,5 +30,7 @@ class Camera{
         glm::mat4 getCameraView();
         Camera(int width, int height);
         void circle();
+        void stationary();
+        void zoomOut();
         void update();
 };

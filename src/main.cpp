@@ -46,6 +46,7 @@ int main(int argc, char* argv[]){
         for (auto& p : particles) {
             p.m_x += sin(p.m_y * 2.0f + glfwGetTime()) * 0.02f;
             p.m_y += cos(p.m_x * 2.0f - glfwGetTime()) * 0.02f;
+            p.m_z += cos(p.m_z * 2.0f - glfwGetTime()) * 0.02f;
         }
 
         particleRenderer.updateBuffers(particles);
@@ -58,7 +59,7 @@ int main(int argc, char* argv[]){
                               camera.proj,  camera.eye);
 
         // Camera movement
-        camera.circle();
+        camera.zoomOut();
 
         window.swapBuffers();
         window.pollEvents();

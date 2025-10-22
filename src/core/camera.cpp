@@ -28,9 +28,28 @@ void Camera::circle(){
     m_cameraPos = glm::vec3(camX, 0.0f, camZ);
 };
 
+void Camera::stationary() {
+    glm::vec3 eye(0.0f, 0.0f, 30.0f);          
+    glm::vec3 target(0.0f, 0.0f, 0.0f);       
+    glm::vec3 up(0.0f, 1.0f, 0.0f);          
+
+    m_cameraView = glm::lookAt(eye, target, up);
+    m_cameraPos  = eye;
+}
+
+void Camera::zoomOut(){
+    glm::vec3 eye(0.0f, 0.0f, 30.0f + glfwGetTime() * 2);
+    glm::vec3 target(0.0f, 0.0f, 0.0f);       
+    glm::vec3 up(0.0f, 1.0f, 0.0f);          
+
+    m_cameraView = glm::lookAt(eye, target, up);
+    m_cameraPos  = eye;
+};
+
 void Camera::update(){
     model = glm::mat4(1.0f);
     view  = getCameraView();
     proj  = glm::perspective(glm::radians(m_FOV), m_width/(float)m_height, 0.1f, 100.0f);
     eye   = getCameraPos();
 };
+

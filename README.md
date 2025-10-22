@@ -4,7 +4,7 @@
 A fast, tweakable particle sandbox written in **C++17 + OpenGL**.  
 It renders large particle counts and lets you experiment with procedural “wave” fields and gravity-style motion.
 
-![a9wkpe](https://github.com/user-attachments/assets/3489a8b1-3fd5-4516-9d66-21409d4e9633)
+![Untitled design(1)](https://github.com/user-attachments/assets/3436b520-b868-4c3f-83ee-27df2cc5a22d)
 
 ---
 

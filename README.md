@@ -4,6 +4,8 @@
 A fast, tweakable particle sandbox written in **C++17 + OpenGL**.  
 It renders large particle counts and lets you experiment with procedural “wave” fields and gravity-style motion.
 
+![a9wkpe](https://github.com/user-attachments/assets/3489a8b1-3fd5-4516-9d66-21409d4e9633)
+
 ---
 
 ## 🧱 Project Layout
@@ -29,14 +31,16 @@ It renders large particle counts and lets you experiment with procedural “wave
 └─ shaders/
    ├─ basic.vert
    └─ basic.frag
-
-⚙️ Dependencies
+```
+## ⚙️ Dependencies
+```bash
   C++17 toolchain (gcc / clang / MSVC)
   CMake ≥ 3.16
   OpenGL 3.3+ capable GPU + drivers
   GLFW, GLAD, GLM
-
-Arch Linux Setup
+```
+## Arch Linux Setup
+```bash
 sudo pacman -S --needed base-devel cmake glfw-x11 glm git
 
 git clone https://github.com/yourname/GravitySim.git
@@ -46,15 +50,15 @@ cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build -j
 
 ./build/GravitySim 250000
-
-How It Works:
+```
+## How It Works:
   Particle – simple POD struct storing position & velocity (graphics/particle.hpp)
   
   ParticleRenderer – owns GPU buffers, uploads particle positions, and draws them
   
   ParticleManager – updates particle states every frame; includes multiple “wave” patterns
 
-Example Update Function:
+## Example Update Function:
 // graphics/particleManager.cpp
 void ParticleManager::wave1(std::vector<Particle>& particles) {
     for (auto& p : particles) {

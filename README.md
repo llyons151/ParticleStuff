@@ -1,4 +1,4 @@
-# Cool Particle Stuff
+# Particle Stuff
 ### Real-Time Particle Playground (OpenGL)
 
 A fast, tweakable particle sandbox written in **C++17 + OpenGL**.  

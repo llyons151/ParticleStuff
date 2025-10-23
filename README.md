@@ -55,15 +55,3 @@ cmake --build build -j
   ParticleRenderer – owns GPU buffers, uploads particle positions, and draws them
   
   ParticleManager – updates particle states every frame; includes multiple “wave” patterns
-
-## Example Update Function:
-// graphics/particleManager.cpp
-void ParticleManager::wave1(std::vector<Particle>& particles) {
-    for (auto& p : particles) {
-        p.m_x += std::sin(p.m_y * 2.0f + glfwGetTime()) * 0.02f;
-        p.m_y += std::cos(p.m_x * 2.0f - glfwGetTime()) * 0.02f;
-        p.m_z += std::cos(p.m_z * 2.0f - glfwGetTime()) * 0.02f;
-    }
-}
-Call particleManager.(desired wave function) in main game loop
-Add as many custom “wave” functions as you like — each one defines a unique motion pattern.
